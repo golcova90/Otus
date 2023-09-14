@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<AccumulationRegisterAggregates xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<Aggregate id="ca341ecb-578e-41ac-886b-947b3f177065">
+		<Use>Auto</Use>
+		<Periodicity>Day</Periodicity>
+		<Dimensions>
+			<Dimension ref="AccumulationRegister.ТестовыйРНОбороты.Dimension.Организация">true</Dimension>
+			<Dimension ref="AccumulationRegister.ТестовыйРНОбороты.Dimension.Номенклатура">false</Dimension>
+		</Dimensions>
+	</Aggregate>
+</AccumulationRegisterAggregates>

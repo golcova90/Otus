@@ -1,0 +1,12 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.sample-package.org1">
+	<import namespace="http://v8.1c.ru/8.1/data/enterprise/current-config"/>
+	<property name="Свойство1" type="xs:date" form="Element"/>
+	<property name="Свойство2" type="xs:date" localName="date"/>
+	<valueType name="Даты" base="xs:string">
+		<enumeration xsi:type="xs:string">Дата1</enumeration>
+	</valueType>
+	<objectType name="ТипОбъекта1">
+		<property xmlns:d3p1="http://www.sample-package.org1" name="Свойство1" type="d3p1:ТипОбъекта1" upperBound="-1"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="Номенклатура" type="d3p1:CatalogRef.Номенклатура"/>
+	</objectType>
+</package>

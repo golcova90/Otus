@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CalculationTypePredefinedItems" version="2.16">
+	<Item id="ad5e25cc-a2cb-40a5-aef7-fe41e5669a23">
+		<Name>Больничный</Name>
+		<Code/>
+		<Description>Больничный</Description>
+		<ActionPeriodIsBase>true</ActionPeriodIsBase>
+		<Base>
+			<CalculationType>ChartOfCalculationTypes.ТестовыйПВР.Оклад</CalculationType>
+		</Base>
+		<Leading>
+			<CalculationType>ChartOfCalculationTypes.ТестовыйПВР.Оклад</CalculationType>
+			<CalculationType>ChartOfCalculationTypes.ТестовыйПВР.Премия</CalculationType>
+		</Leading>
+	</Item>
+	<Item id="e4121257-0f1d-4fa4-82bb-801af84a28c3">
+		<Name>Оклад</Name>
+		<Code/>
+		<Description>Оклад</Description>
+		<ActionPeriodIsBase>true</ActionPeriodIsBase>
+		<Displaced>
+			<CalculationType>ChartOfCalculationTypes.ТестовыйПВР.Больничный</CalculationType>
+		</Displaced>
+	</Item>
+	<Item id="ddd93e0e-cc5d-4729-9518-cdf53a7044af">
+		<Name>Премия</Name>
+		<Code/>
+		<Description>Премия</Description>
+		<ActionPeriodIsBase>false</ActionPeriodIsBase>
+		<Base>
+			<CalculationType>ChartOfCalculationTypes.ТестовыйПВР.Оклад</CalculationType>
+		</Base>
+		<Leading>
+			<CalculationType>ChartOfCalculationTypes.ТестовыйПВР.Больничный</CalculationType>
+			<CalculationType>ChartOfCalculationTypes.ТестовыйПВР.Оклад</CalculationType>
+		</Leading>
+	</Item>
+</PredefinedData>
