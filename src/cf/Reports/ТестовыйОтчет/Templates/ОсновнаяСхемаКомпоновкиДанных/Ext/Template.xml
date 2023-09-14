@@ -34,6 +34,19 @@
 			<dataPath>СуммаОперацииОборот</dataPath>
 			<field>СуммаОперацииОборот</field>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Товар</dataPath>
+			<field>Товар</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Товар</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
 	ТестовыйРНОборотыОбороты.Организация КАК Организация,
@@ -43,7 +56,8 @@
 			ТОГДА "Строка"
 		ИНАЧЕ "НеСтрока"
 	КОНЕЦ КАК ПолеСтрока,
-	ТестовыйРНОборотыОбороты.СуммаОперацииОборот КАК СуммаОперацииОборот
+	ТестовыйРНОборотыОбороты.СуммаОперацииОборот КАК СуммаОперацииОборот,
+	ТестовыйРНОборотыОбороты.Номенклатура КАК Товар
 ИЗ
 	РегистрНакопления.ТестовыйРНОбороты.Обороты КАК ТестовыйРНОборотыОбороты</query>
 		<useQueryGroupIfPossible>false</useQueryGroupIfPossible>
